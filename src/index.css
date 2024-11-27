@@ -1,194 +1,227 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: "Roboto Mono", sans-serif;
-  background-color: #f7f2e9;
-  color: #252525;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  padding: 3.2rem;
-}
+  body {
+    font-family: "Roboto Mono", sans-serif;
+    background-color: #f7f2e9;
+    color: #252525;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 3.2rem;
+  }
 
-/* App Container */
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
+  /* App Container */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-/* Header */
-h1 {
-  font-size: 3.6rem;
-  color: #6b4226;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  background-color: #edc84b;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+  /* Header */
+  h1 {
+    font-size: 3.6rem;
+    color: #6b4226;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background-color: #edc84b;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-/* Form */
-.add-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* Ensures responsive layout */
-  gap: 1.5rem;
-  background-color: #ffde96;
-  padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 700px; /* Increased max width */
-}
-
-.add-form h3 {
-  font-size: 2.4rem; /* Increased font size */
-  color: #6b4226;
-  font-weight: bold;
-  flex: 1 1 100%; /* Makes it take the full width if necessary */
-  text-align: center;
-}
-
-.add-form input,
-.add-form select,
-.add-form button {
-  padding: 1.2rem 2rem; /* Increased padding for better sizing */
-  border-radius: 8px; /* Rounded corners */
-  border: none;
-  font-size: 1.8rem; /* Increased font size */
-  width: auto; /* Prevents fixed width clipping */
-}
-
-.add-form input {
-  flex: 2 1 40%; /* Flexible sizing for responsiveness */
-  background-color: #fff7e9;
-  border: 1px solid #ffd59e;
-}
-
-.add-form select {
-  background-color: #ffe4b5;
-  color: #252525;
-  cursor: pointer;
-  flex: 1 1 20%; /* Flexible sizing */
-}
-
-.add-form button {
-  background-color: #6b4226;
-  color: #fff;
-  font-weight: bold;
-  transition: transform 0.2s, background-color 0.3s;
-  cursor: pointer;
-  flex: 1 1 20%; /* Flexible sizing */
-}
-
-.add-form button:hover {
-  transform: scale(1.1);
-  background-color: #4e2e1c;
-}
-
-/* Packing List */
-.list {
-  width: 100%;
-  max-width: 800px;
-  background-color: #fef9e7;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.list ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #ffd59e;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.list li:hover {
-  background-color: #fff8e5;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.list li input[type="checkbox"] {
-  width: 1.6rem;
-  height: 1.6rem;
-  accent-color: #6b4226;
-  align-self: center;
-}
-
-.list li button {
-  padding: 0.6rem 1rem;
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
-}
-
-.list li button:hover {
-  transform: scale(1.1);
-  background-color: #d04b41;
-}
-
-/* Stats */
-.stats {
-  width: 100%;
-  max-width: 800px;
-  background-color: #6b4226;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-.footer {
-  color: black;
-  text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
-  font-style: italic;
-}
-
-/* Hover Effects for Buttons */
-button:hover {
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+  /* Form */
   .add-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsive layout */
+    gap: 1.5rem;
+    background-color: #ffde96;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Increased max width */
+  }
+
+  .add-form h3 {
+    font-size: 2.4rem; 
+    color: #6b4226;
+    font-weight: bold;
+    flex: 1 1 100%; 
+    text-align: center;
+  }
+
+  .add-form input,
+  .add-form select,
+  .add-form button {
+    padding: 1.2rem 2rem; /* Increased padding for better sizing */
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    font-size: 1.8rem; /* Increased font size */
+    width: auto; /* Prevents fixed width clipping */
+  }
+
+  .add-form input {
+    flex: 2 1 40%; /* Flexible sizing for responsiveness */
+    background-color: #fff7e9;
+    border: 1px solid #ffd59e;
+  }
+
+  .add-form select {
+    background-color: #ffe4b5;
+    color: #252525;
+    cursor: pointer;
+    flex: 1 1 20%; /* Flexible sizing */
+  }
+
+  .add-form button {
+    background-color: #6b4226;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    flex: 1 1 20%; /* Flexible sizing */
+  }
+
+  .add-form button:hover {
+    transform: scale(1.1);
+    background-color: #4e2e1c;
+  }
+
+  /* Packing List */
+  .list {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fef9e7;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .list ul {
+    list-style: none;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
   .list li {
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;
+    justify-content: space-between; /* Space between the elements */
+    align-items: center; /* Align items vertically in the center */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ffd59e;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    gap: 1rem; /* Add some spacing between elements */
   }
-}
+  
+  .list li span {
+    flex: 1; /* Allow the text to take up remaining space */
+    white-space: nowrap; /* Prevent wrapping of long text */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+  }
+  
+  .list li input[type="checkbox"] {
+    flex: 0 0 2rem; /* Fixed width for the checkbox */
+    height: 1.6rem; /* Match the height */
+    accent-color: #6b4226;
+  }
+  
+  .list li button {
+    flex: 0 0 5rem; /* Fixed width for the delete button */
+    padding: 0.6rem 1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .list li:hover {
+    background-color: #fff8e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stats */
+  .stats {
+    width: 100%;
+    max-width: 800px;
+    background-color: #6b4226;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Footer */
+  .footer {
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  /* Hover Effects for Buttons */
+  button:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-form {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .list li {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+
+
+  .clear-all-button {
+    background-color: #6b4226;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    
+    height: 200px;
+    width: 500px;
+
+    font-size: 2.4rem; 
+    color: #fff;
+ 
+    text-align: center;
+    
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1.6rem;
+  }
+  
